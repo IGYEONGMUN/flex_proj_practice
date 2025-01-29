@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./styles/reset.css);
+@import url(./styles/variables.css);
+
+body{
+    
+    font-size: 62.5%;
+    font-family: var(--montserrat-font-family);
+}
+
+.inner{
+    border: 1px solid #f00;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    .banner{
+        
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        background: var(--main-dark-color);
+        color: var(--main-light-color);
+        
+        .lnb{
+            width: 100%;
+            
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.0rem;
+            margin-right: 20px;
+            em{
+                color: var(--em-font-color);
+            }
+        }
+    }
+    .gnbitems{
+        
+        margin: 20px auto;
+        .gnbbanner{
+            width: 1300px;
+            display: flex;
+            align-items: center;
+            .gnb{
+                width: 1300px;
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+                font-size: 1.0rem;
+                color: var(--main-light-color);
+            }
+        }
+    }
+}
+
+.introsection{
+    width: 100%;
+    height: 100vh;
+    
+    background: url(./images/intro.jpg);
+    .intro{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-size: 3rem;
+           margin-bottom: 10px;
+        }
+        p{
+            width: 1300px;
+            font-size: 0.8rem;
+            
+            padding: 0 150px;
+        }
+    }
+}
