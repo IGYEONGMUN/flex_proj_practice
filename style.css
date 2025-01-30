@@ -41,10 +41,11 @@ header{
         border: 1px solid #f00;
         background: var(--main-light-color);
             .gnbbanner{
-                
+                border: 1px solid #f00;
                 margin: 20px auto;
                 display: flex;
                 align-items: center;
+                
                 .gnblist{
                     
                     width: 100%;
@@ -52,7 +53,7 @@ header{
                     justify-content: flex-end;
                     gap: 10px;
                     font-size: 1.0rem;
-                    color: var(--main-light-color);
+                    color: var(--main-dark-color);
                 }
             }
 
