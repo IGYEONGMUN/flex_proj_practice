@@ -83,6 +83,32 @@ header{
     }
 }
 
-.aboutsection{
+.about{
+    display: flex;
+    align-items: center;
     border: 1px solid #f00;
+    padding: 30px;
+    .desc{
+        flex: 2;
+        text-align: center;
+        font-size: 1.0rem;
+        
+        p{
+            font-size: 0.8rem;
+            margin: 50px 0;
+        }
+        a{
+            color: var(--a-font-color);
+            font-weight: bold;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .photo{
+        flex: 1;
+        img{
+            border-radius: 40% 65% 30% 35% / 40% 45% 55% 60%;
+        }
+    }
 }
