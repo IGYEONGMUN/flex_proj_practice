@@ -9,7 +9,7 @@ body{
 }
 
 .inner{
-    border: 1px solid #f00;
+    
     width: 1300px;
     margin: 0 auto;
 }
@@ -17,37 +17,34 @@ body{
 header{
     position: fixed;
     width: 100%;
-    .banner{
-        
-        height: 40px;
-        display: flex;
-        justify-content: center;
+    
+        .banner{
+        padding-right: 20px;
         background: var(--main-dark-color);
         color: var(--main-light-color);
-        
         .lnb{
-            width: 100%;
             
+            height: 40px;
+            
+            
+            width: 100%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             gap: 10px;
             font-size: 1.0rem;
-            margin-right: 20px;
             em{
                 color: var(--em-font-color);
             }
         }
     }
-    .gnbitems{
-        
-        margin: 20px auto;
+    
         .gnbbanner{
-            width: 1300px;
+            margin: 20px auto;
             display: flex;
             align-items: center;
             .gnb{
-                width: 1300px;
+                width: 100%;
                 display: flex;
                 justify-content: flex-end;
                 gap: 10px;
@@ -55,10 +52,11 @@ header{
                 color: var(--main-light-color);
             }
         }
-    }
+    
 }
 
 .introsection{
+    
     width: 100%;
     height: 100vh;
     
@@ -70,15 +68,21 @@ header{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        color: var(--main-light-color);
         h1{
             font-size: 3rem;
-           margin-bottom: 10px;
+           margin-bottom: 60px;
+           
         }
         p{
             width: 1300px;
-            font-size: 0.8rem;
-            
+            font-size: 1.1rem;
             padding: 0 150px;
+            
         }
     }
+}
+
+.aboutsection{
+    border: 1px solid #f00;
 }
