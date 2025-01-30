@@ -9,24 +9,22 @@ body{
 }
 
 .inner{
-    
     width: 1300px;
     margin: 0 auto;
 }
 
 header{
+    
     position: fixed;
     width: 100%;
-    
         .banner{
+            
         padding-right: 20px;
         background: var(--main-dark-color);
         color: var(--main-light-color);
         .lnb{
             
             height: 40px;
-            
-            
             width: 100%;
             display: flex;
             justify-content: flex-end;
@@ -39,20 +37,33 @@ header{
         }
     }
     
-        .gnbbanner{
-            margin: 20px auto;
-            display: flex;
-            align-items: center;
-            .gnb{
-                width: 100%;
+    .gnb{
+        border: 1px solid #f00;
+        background: var(--main-light-color);
+            .gnbbanner{
+                
+                margin: 20px auto;
                 display: flex;
-                justify-content: flex-end;
-                gap: 10px;
-                font-size: 1.0rem;
-                color: var(--main-light-color);
+                align-items: center;
+                .gnblist{
+                    
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+                    font-size: 1.0rem;
+                    color: var(--main-light-color);
+                }
             }
+
+        &.active{
+            color: var(--main-dark-color);
         }
+    }
+
+       
     
+       
 }
 
 .introsection{
@@ -78,7 +89,7 @@ header{
             width: 1300px;
             font-size: 1.1rem;
             padding: 0 150px;
-            
+            line-height: 1.5rem;
         }
     }
 }
@@ -86,16 +97,17 @@ header{
 .about{
     display: flex;
     align-items: center;
-    border: 1px solid #f00;
-    padding: 30px;
+    padding: 120px 0;
+    
     .desc{
         flex: 2;
         text-align: center;
         font-size: 1.0rem;
-        
+        margin-right: 50px;
         p{
             font-size: 0.8rem;
             margin: 50px 0;
+            line-height: 1.5rem;
         }
         a{
             color: var(--a-font-color);
@@ -106,9 +118,13 @@ header{
         }
     }
     .photo{
-        flex: 1;
+        
+        flex: 2;
         img{
+            width: 100%;
+            height: 100%;
             border-radius: 40% 65% 30% 35% / 40% 45% 55% 60%;
         }
     }
 }
+
