@@ -23,8 +23,10 @@ header {
     background: var(--main-dark-color);
     color: var(--main-light-color);
     transition: all 0.5s;
+    
     .lnb {
-      border: 1px solid #f00;
+        transition: all 0.5s;
+        
       height: 40px;
       width: 100%;
       display: flex;
@@ -38,9 +40,12 @@ header {
       }
     }
 
-    &.active {
+    &.active{
       height: 0;
       overflow: hidden;
+      .lnb{
+        opacity: 0;
+      }
     }
   }
 
@@ -53,6 +58,7 @@ header {
       align-items: center;
 
       .gnblist {
+        
         width: 100%;
         display: flex;
         justify-content: flex-end;
@@ -105,7 +111,9 @@ header {
   .desc {
     flex: 2;
     text-align: center;
-    font-size: 1rem;
+    h1{
+      font-size: 1.5rem;
+    }
     margin-right: 50px;
     p {
       font-size: 0.8rem;
@@ -128,4 +136,176 @@ header {
       border-radius: 40% 65% 30% 35% / 40% 45% 55% 60%;
     }
   }
+}
+
+.ranking{
+    background: var(--border-bg-color);
+  
+    h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .items{
+      
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        
+        .item{
+            
+            border-radius:20px 0 20px 0 ;
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+            width: 370px;
+            height: 500px;
+            overflow: hidden;
+            background: var(--main-light-color);
+            &:nth-child(1){
+                
+                img{
+                    width: 100%;
+                }
+
+                .bottom-desc{
+                  
+                  margin-top: 20px;
+                  padding: 0 10px;
+                    .badge{
+                      border-radius: 5px;
+                      margin-bottom: 10px;
+                      p{
+                          text-align: center;
+                          line-height: 20px;
+                          color: var(--main-light-color);
+                        }
+                        width: 100px;
+                        height: 20px;
+                        background: var(--desc-badge-color);
+                    }
+                    h2{
+                      font-size: 1.4rem;
+                      margin-bottom: 10px;
+                    }
+                    p{
+                      font-size: 0.9rem;
+                      line-height: 1.2rem;
+                      margin-bottom: 10px;
+                    }
+                    .explore{
+                      a{
+                        font-size: 0.9rem;
+                        color: var(--a-font-color);
+                        img{
+                          width: 25px;
+                          height: 8px;
+                        }
+                        &:hover{
+                          img{
+                            transition: all 0.3s;
+                            margin-left: 10px;
+                          }
+                        }
+                      }
+                    }
+                }
+            }
+            &:nth-child(2){
+                
+                img{
+                    width: 100%;
+                }
+
+                .bottom-desc{
+                  
+                  margin-top: 20px;
+                  padding: 0 10px;
+                    .badge{
+                      border-radius: 5px;
+                      margin-bottom: 10px;
+                      p{
+                          text-align: center;
+                          line-height: 20px;
+                          color: var(--main-light-color);
+                        }
+                        width: 100px;
+                        height: 20px;
+                        background: var(--must-badge-color);
+                    }
+                    h2{
+                      font-size: 1.4rem;
+                      margin-bottom: 10px;
+                    }
+                    p{
+                      font-size: 0.9rem;
+                      line-height: 1.2rem;
+                      margin-bottom: 10px;
+                    }
+                    .explore{
+                      a{
+                        font-size: 0.9rem;
+                        color: var(--a-font-color);
+                        img{
+                          width: 25px;
+                          height: 8px;
+                        }
+                        &:hover{
+                          img{
+                            transition: all 0.3s;
+                            margin-left: 10px;
+                          }
+                        }
+                      }
+                    }
+                }
+            }
+            &:nth-child(3){
+                
+                img{
+                    width: 100%;
+                }
+
+                .bottom-desc{
+                  
+                  margin-top: 20px;
+                  padding: 0 10px;
+                    .badge{
+                      border-radius: 5px;
+                      margin-bottom: 10px;
+                      p{
+                          text-align: center;
+                          line-height: 20px;
+                          color: var(--main-light-color);
+                        }
+                        width: 100px;
+                        height: 20px;
+                        background: var(--desc-badge-color);
+                    }
+                    h2{
+                      font-size: 1.4rem;
+                      margin-bottom: 10px;
+                    }
+                    p{
+                      font-size: 0.9rem;
+                      line-height: 1.2rem;
+                      margin-bottom: 10px;
+                    }
+                    .explore{
+                      a{
+                        font-size: 0.9rem;
+                        color: var(--a-font-color);
+                        img{
+                          width: 25px;
+                          height: 8px;
+                        }
+                        &:hover{
+                          img{
+                            transition: all 0.3s;
+                            margin-left: 10px;
+                          }
+                        }
+                      }
+                    }
+                }
+            }
+        }
+    }
 }
